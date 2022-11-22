@@ -1,0 +1,196 @@
+/* header (navigation bar) */
+:root {
+	--text-color: #4A4A4A;
+	--background-color: #e6dede;
+	--website-title:#fff;
+	--text-font:'Open Sans', sans-serif;
+	--title-font: 'Poor Story', cursive;
+}
+html {
+	background-color: var(--background-color);
+	width: 100%;
+	height: 100%;
+}
+ul.navbar-desktop {
+	height: 66px;
+	background-color: orange;
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+}
+/* left navbar */
+div.nav-title {
+	font-size: 26px;
+	font-family: var(--title-font);
+	color: var(--website-title);
+	text-decoration: underline;
+	margin-left: 2%;
+}
+/* right navbar */
+article.right-navbar {
+	display: flex;
+	font-family: var(--text-font);
+	color: var(--website-title);
+	align-items: center;
+	overflow-x: hidden;
+}
+article.right-navbar li {
+	margin: 16px;
+	padding: 9px;
+	border-radius: 9px;
+}
+
+article.right-navbar li:last-child {
+	background-color: black;
+}
+
+article.right-navbar li:hover {
+	cursor: pointer;
+	background-color: rgb(5, 105, 105);
+}
+
+/* main */
+
+section.banner {
+	background-color: antiquewhite;
+	height: 500px;
+	
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+/* dit is een form achtig contact box*/
+article.contact {
+	height: 420px;
+	width: 425px;
+	background-color: black;
+	border-radius: 20px;
+	border: 6px solid white;
+	box-shadow: 3px  6px gray;
+	justify-content: center;
+	
+}
+
+div.contact-title h5{
+	color: orange;
+	justify-content: center;
+	display: flex;
+	padding: 9px;
+	font-size: 23px;
+}
+div.contact-image {
+	background-image: url("../images/contact-image.jpg");
+	width: 99%;
+	height: 200px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	margin: auto;
+	border-bottom: 2px solid orange;
+	border-top: 2px solid orange;
+}
+div.contact-text {
+	color: var(--website-title);
+	padding: 5%;
+	font-size: large;
+	text-align: center;
+	line-height: 1.2;
+}
+/*section images*/
+section.natures {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+div.nature {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+div.nature img {
+	padding: 5px;
+	width: 100%;
+	height: 150px;
+	image-resolution: 1080;
+}
+
+@media only screen and (max-width:500px) {
+	div.nature img {
+	margin: 5px auto;
+	width: 98%;
+	height: 300px;
+	}
+}
+
+/* section team */
+
+section.team {
+	height: 550px;
+	width: 100%;
+	background-image: url("https://content.codecademy.com/PRO/independent-practice-projects/flexbox-business-site/img/blurred-road.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+article.person {
+	display: grid;
+	width: 200px;
+	height: 250px;
+	justify-content: center;
+	margin: 5px;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(3,1fr);
+}
+article.person h3 {
+	display: grid;
+	grid-row: 1;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	font-size: 23px;
+	background-color: black;
+	color: var(--website-title);
+	font-family: var(--text-font);
+}
+
+article.person img {
+	display: grid;
+	grid-row: 2;
+	display: flex;
+	width: 100%;
+	height: 160px;
+	justify-content: center;
+	background-color: var(--background-color);
+}
+
+article.person p {
+	display: grid;
+	grid-row: 3;
+	background-color: bisque;
+	color: white;
+	font-size: 17px;
+	height: 100%;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+article.person:hover {
+	background-color: black;
+	box-shadow: 3px  6px gray;
+	margin-top: 15px;
+	margin-bottom: 26px;
+	transition: all .6s;
+}
+
+
+
